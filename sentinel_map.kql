@@ -1,0 +1,3 @@
+FAILED_RGP_WITH_GEO_CL
+| parse RawData with * "latitude:" Latitude ",longitude:" Longitude ",destinationhost:" DestinationHost ",username:" Username ",sourcehost:" Sourcehost ",state:" State ", country:" Country ",label:" Label ",timestamp:" Timestamp
+| summarize event_count=count() by Latitude, Longitude, DestinationHost, Username, Sourcehost, State, Country, Label, Timestamp
